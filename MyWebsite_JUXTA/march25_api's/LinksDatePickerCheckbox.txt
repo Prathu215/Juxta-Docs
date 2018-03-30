@@ -1,0 +1,66 @@
+http://www.pratyushasupport.org/contact/
+for contact us reference.
+
+
+https://www.concretepage.com/angular-2/angular-2-radio-button-and-checkbox-example
+
+for checkboxes
+
+1st link 
+https://www.npmjs.com/package/angular2-multiselect-checkbox-dropdown?activeTab=readme
+
+2nd link
+https://scotch.io/tutorials/how-to-deal-with-different-form-controls-in-angular-2
+
+3rd link
+https:
+//www.concretepage.com/angular-2/angular-2-radio-button-and-checkbox-example -->
+
+ 
+
+March 27
+--------
+Daily tasks
+--------------
+1. contact us page. = pending... we spent around 1.5 hours.
+2. Apply patch to git, and make git work. = pending... we spent around 1.5 hours.
+3. Checkboxes = pending...
+4. Solve .git issue, .git creates init folder in every directory. = pending...
+
+March 28
+-----------
+1. Inspect juxta-services.
+2. Inspect juxta-ui.
+3. Review apis, and make a list of required apis.
+4. Categories page.(Displays a title along with two buttons)
+
+
+
+https://stackoverflow.com/questions/26483585/spring-boot-custom-exception-within-an-rest-service
+
+March 29 
+-------------
+1.Hyperlink for email Prathyusha.vinukonda@gmail.com on top right side.
+Link -
+https://www.etq.com/google/qms/?utm_source=Google&utm_medium=cpc&utm_campaign=EtQ&gclid=EAIaIQobChMI-u2JvuqR2gIV2LXACh23YQKDEAAYASAAEgJQ7_D_BwE
+
+2.Side navigation bar for fb,twitter,insta ,mail.
+Link-
+https://climate.nasa.gov/nasa_science/history/ 
+
+For subscribe button model and navigation for fb mesngr etc.
+
+https://blog.hubspot.com/marketing/best-website-designs-list 
+
+For navigation below the page
+
+http://minimums.com/?s=options
+
+
+3.
+For login and signup sub page
+
+http://www.latimes.com/
+
+
+

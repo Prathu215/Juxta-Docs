@@ -1,0 +1,234 @@
+Admin forms
+----------------------------------------------------------------------------------------------------
+Assertion: Make a ajax call to load dropdowns.
+- I am not sure whether we need API to make this call, please let me know if you have any idea.
+- Making an ajax call need api to populate dropdown? like dropdowns in automobile form fields.
+Menu option:Categories
+-----------------------------------------------------------------------------------------------------
+juxta/categories = Response should return all categories.
+
+	- juxta/categories/automobiles = Response should contain whole list of automobiles.
+		- juxta/categories/automobiles/id = Response should return automobiles by id.
+		- juxta/categories/automobiles/brandname = Response should return automobiles by brand name.
+	- juxta/categories/electronics = Response should contain whole list of electronics.
+		- juxta/categories/electronics/id = Response should return electronics by id.
+		- juxta/categories/electronics/brandname = Response should return electronics by brand name.
+
+Contact Us
+---------------------------------------------------------------------------------------------------
+::FIELDS::
+
+Full name:
+Email:
+Phone:
+Comments/suggestions:text box
+	- juxta/users = Response should return all registered users (admins).
+
+	
+	Api: juxta/categories
+	Sample Response:
+	
+	{
+  "category": {
+    "Automobiles": [
+      {
+        "autoId": 0,
+        "autoBrand": "chevy",
+        "autoSeries": "E",
+        "autoModel": "v12",
+        "autoYear": 2018,
+        "autoPrice": 233,
+        "autoEngine": "V6",
+        "autoType": "diesel",
+        "autoHorsePower": 1500,
+        "autoCurbWeight": 400,
+        "autoMPG": 4.5
+      },
+      {
+        "autoId": 1,
+        "autoBrand": "chevy",
+        "autoSeries": "E",
+        "autoModel": "v12",
+        "autoYear": "2017",
+        "autoPrice": "233",
+        "autoEngine": "V6",
+        "autoType": "diesel",
+        "autoHorsePower": 1500,
+        "autoCurbWeight": 400,
+        "autoMPG": "4.5"
+      }
+    ],
+    "Electronics": [
+      {
+        "deviceId":0,
+        "deviceBrand ": "Lenovo",
+        "deviceModel ": "thinkpad",
+        "deviceSeries ": "T450",
+        "deviceType ": "touch/non-touch",
+        //only 2 options touch or non-touch
+        "deviceRam ": "8",
+        "deviceHDD ": "1000",// in gb
+        "deviceProcessor ": "i5",
+        "deviceScreenSize ": 14,// in inches
+        "deviceBatteryPower ": "1400",
+        "deviceUSBSlots ": 2,
+        "deviceHDMI ": "yes"
+      },
+      {
+        "deviceId":1,
+        "deviceBrand ": "Lenovo",
+        "deviceModel ": "thinkpad",
+        "deviceSeries ": "T450",
+        "deviceType ": "touch/non-touch",
+        //only 2 options touch or non-touch
+        "deviceRam ": "8",
+        "deviceHDD ": "1000",// in gb
+        "deviceProcessor ": "i5",
+        "deviceScreenSize ": "14",// in inches
+        "deviceBatteryPower ": "1400",
+        "deviceUSBSlots ": 2,
+        "deviceHDMI ": "yes"
+      }
+    ]
+  }
+}
+	Api: juxta/categories/automobiles
+	Sample Response:
+	
+	[
+      {
+        "autoId": 0,
+        "autoBrand": "chevy",
+        "autoSeries": "E",
+        "autoModel": "v12",
+        "autoYear": 2018,
+        "autoPrice": 233,
+        "autoEngine": "V6",
+        "autoType": "diesel",
+        "autoHorsePower": 1500,
+        "autoCurbWeight": 400,
+        "autoMPG": 4.5
+      },
+      {
+        "autoId": 1,
+        "autoBrand": "chevy",
+        "autoSeries": "E",
+        "autoModel": "v12",
+        "autoYear": "2017",
+        "autoPrice": "233",
+        "autoEngine": "V6",
+        "autoType": "diesel",
+        "autoHorsePower": 1500,
+        "autoCurbWeight": 400,
+        "autoMPG": "4.5"
+      }
+    ]
+	
+	Api: juxta/categories/automobiles/id
+	Sample Response:	
+      {
+        "autoId": 0,
+        "autoBrand": "chevy",
+        "autoSeries": "E",
+        "autoModel": "v12",
+        "autoYear": 2018,
+        "autoPrice": 233,
+        "autoEngine": "V6",
+        "autoType": "diesel",
+        "autoHorsePower": 1500,
+        "autoCurbWeight": 400,
+        "autoMPG": 4.5
+      }
+	  
+	  Api: juxta/categories/automobiles/brandname
+	  Sample Response:
+	   {
+        "autoId": 0,
+        "autoBrand": "chevy",
+        "autoSeries": "E",
+        "autoModel": "v12",
+        "autoYear": 2018,
+        "autoPrice": 233,
+        "autoEngine": "V6",
+        "autoType": "diesel",
+        "autoHorsePower": 1500,
+        "autoCurbWeight": 400,
+        "autoMPG": 4.5
+      }
+	
+	 Api: juxta/categories/electronics
+	 Sample Response:
+	 [
+      {
+        "deviceId":0,
+        "deviceBrand ": "Lenovo",
+        "deviceModel ": "thinkpad",
+        "deviceSeries ": "T450",
+        "deviceType ": "touch/non-touch",
+        //only 2 options touch or non-touch
+        "deviceRam ": "8",
+        "deviceHDD ": "1000",// in gb
+        "deviceProcessor ": "i5",
+        "deviceScreenSize ": 14,// in inches
+        "deviceBatteryPower ": "1400",
+        "deviceUSBSlots ": 2,
+        "deviceHDMI ": "yes"
+      },
+      {
+        "deviceId":1,
+        "deviceBrand ": "Lenovo",
+        "deviceModel ": "thinkpad",
+        "deviceSeries ": "T450",
+        "deviceType ": "touch/non-touch",
+        //only 2 options touch or non-touch
+        "deviceRam ": "8",
+        "deviceHDD ": "1000",// in gb
+        "deviceProcessor ": "i5",
+        "deviceScreenSize ": "14",// in inches
+        "deviceBatteryPower ": "1400",
+        "deviceUSBSlots ": 2,
+        "deviceHDMI ": "yes"
+      }
+    ]
+	
+	Api: juxta/categories/Electronics/id
+	Sample Response:
+	
+	{
+        "deviceId":0,
+        "deviceBrand ": "Lenovo",
+        "deviceModel ": "thinkpad",
+        "deviceSeries ": "T450",
+        "deviceType ": "touch/non-touch",
+        //only 2 options touch or non-touch
+        "deviceRam ": "8",
+        "deviceHDD ": "1000",// in gb
+        "deviceProcessor ": "i5",
+        "deviceScreenSize ": 14,// in inches
+        "deviceBatteryPower ": "1400",
+        "deviceUSBSlots ": 2,
+        "deviceHDMI ": "yes"
+      }
+	  
+	  Api: juxta/categories/electronics/brandname
+	  Sample Response:
+	  
+	  	{
+        "deviceId":0,
+        "deviceBrand ": "Lenovo",
+        "deviceModel ": "thinkpad",
+        "deviceSeries ": "T450",
+        "deviceType ": "touch/non-touch",
+        //only 2 options touch or non-touch
+        "deviceRam ": "8",
+        "deviceHDD ": "1000",// in gb
+        "deviceProcessor ": "i5",
+        "deviceScreenSize ": 14,// in inches
+        "deviceBatteryPower ": "1400",
+        "deviceUSBSlots ": 2,
+        "deviceHDMI ": "yes"
+      }
+	  
+	  
+	
+	
