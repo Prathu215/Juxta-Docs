@@ -63,5 +63,16 @@ For login and signup sub page
 http://www.latimes.com/
 
 April 1st Tasks
+1)
+https://stackoverflow.com/questions/38501434/angular2-removing-duplicates-from-an-array
+
+April 2nd
+1)Bootstrap footer links
+
+https://mdbootstrap.com/components/bootstrap-footer/#socialicons
+2)
+Juxta Title Animation
+
+https://bootsnipp.com/snippets/OeKgN
 
 
